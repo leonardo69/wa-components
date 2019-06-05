@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+
+    <script src="app/wa-components.module.js"></script>
+    <script src="./app/wa-list/wa-list.component.js"></script>
+
+    <script src="./app/app.module.js"></script>
+    <title>Document</title>
+</head>
+
+<body ng-app="app" ng-cloak>
+    <div>
+        Инструкция:
+        1. npm install
+        2. npm install browser-sync gulp --save-dev
+        3. gulp serve
+    </div>
+    <wa-list title="'MyListBox'">
+        <label style="color: red">Alex</label><br>
+        <label style="color: blue">Nikita</label><br>
+    </wa-list>
+</body>
+
+</html>

@@ -9,7 +9,9 @@
         .module ('waComponents')
         .component ('waList', {
             templateUrl: 'app/wa-list/wa-list.component.html',
-            transclude: true,
+            transclude:{
+              'slot':'?waListItem'
+            },
             controller: WaListController,
             controllerAs: 'ctrl',
             bindings: {
